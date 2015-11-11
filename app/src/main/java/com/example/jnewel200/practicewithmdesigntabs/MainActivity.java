@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         MainPagerAdapter adapter = new MainPagerAdapter(getSupportFragmentManager());
         //
         adapter.addFragment(new MovieListFragment(), "Movie Titles"); //a simple list
-        //adapter.addFragment(null, "Nice Pictures"); //a collectionview, connect to 500px
+        adapter.addFragment(new NicePicturesFragment(), "Nice Pictures"); //a collectionview, connect to 500px
         //END
         viewPager.setAdapter(adapter);
 
